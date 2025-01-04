@@ -5,6 +5,7 @@
 3) 가급적 Web_crawling 폴더 안에 있는 globals.py만 수정하는 것을 추천
 
 
+
 ### data 수집 과정
 1. 공격, 수비, 패스, 골키퍼, passmatrix 데이터 따로 따로 crawling 과정에서 csv로 받음
 2. 각 csv column명이 잘 인식이 되지 않아 직접 column명을 다시 적는다. (Parsing.py 참고)
@@ -13,18 +14,22 @@
 5. 3번과 4번 csv을 합쳐 데이터 분석할 수 있도록 csv파일을 만든다.
 
 ***(add)*** => 한 라운드에 각각 팀에서 평점 상위 5명씩 뽑고 파일 합침 
+
 6. 각 라운드에 각 팀에서 평점 상위 5명을 뽑는다. (출전 시간 일정 시간 밑이거나 후보는 뺌)
 7. 그렇게 나온 모든 선수를 한 파일에 합친다. 
 
 
+
 ### position별로 data_visualation (data_visualation_position 폴더 참고) 
-1. Data 가져오기
-2. Visualization
-  1) box_plot
-  2) Histogram
-  3) Correlation
-  4) Scatter plot
-  5) Distribution
+1. **Data 가져오기**
+
+2. **Visualization**  
+   1) Box Plot  
+   2) Histogram  
+   3) Correlation  
+   4) Scatter Plot  
+   5) Distribution
+
 
 
 ### position별로 logistic, XGBoost, Randforest 등 model 돌리고 evaluate (model_position 폴더 참고)
@@ -38,6 +43,7 @@
 8. Logistic, Random Forest, XGBoost overfit check
 9. Logistic, Random, XGBoost Confusion matrix
 10. XAI
+
 
 
 ### 모든 선수 데이터로 KNN이랑 Naivebaise model 돌리고 evaluate (model 폴더 참고)
